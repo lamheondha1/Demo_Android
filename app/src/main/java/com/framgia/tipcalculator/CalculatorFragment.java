@@ -22,28 +22,28 @@ import java.util.regex.Pattern;
 public class CalculatorFragment extends Fragment implements View.OnClickListener {
     private TextView text;
     private TextView kq;
-    private Button btn_0;
-    private Button btn_1;
-    private Button btn_2;
-    private Button btn_3;
-    private Button btn_4;
-    private Button btn_5;
-    private Button btn_6;
-    private Button btn_7;
-    private Button btn_8;
-    private Button btn_9;
+    private Button btn0;
+    private Button btn1;
+    private Button btn2;
+    private Button btn3;
+    private Button btn4;
+    private Button btn5;
+    private Button btn6;
+    private Button btn7;
+    private Button btn8;
+    private Button btn9;
 
-    private Button btn_cong;
-    private Button btn_tru;
-    private Button btn_nhan;
-    private Button btn_chia;
+    private Button btncong;
+    private Button btntru;
+    private Button btnnhan;
+    private Button btnchia;
 
-    private Button btn_pt;
-    private Button btn_tp;
-    private Button btn_bang;
-    private Button btn_ac;
-    private Button btn_am;
-    private Button btn_del;
+    private Button btnpt;
+    private Button btntp;
+    private Button btnbang;
+    private Button btnac;
+    private Button btnam;
+    private Button btndel;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -56,26 +56,26 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
         View view = inflater.inflate(R.layout.fragment_calculator, container, false);
         text = view.findViewById(R.id.text);
         kq = view.findViewById(R.id.kq);
-        btn_0 = view.findViewById(R.id.btn_0);
-        btn_1 = view.findViewById(R.id.btn_1);
-        btn_2 = view.findViewById(R.id.btn_2);
-        btn_3 = view.findViewById(R.id.btn_3);
-        btn_4 = view.findViewById(R.id.btn_4);
-        btn_5 = view.findViewById(R.id.btn_5);
-        btn_6 = view.findViewById(R.id.btn_6);
-        btn_7 = view.findViewById(R.id.btn_7);
-        btn_8 = view.findViewById(R.id.btn_8);
-        btn_9 = view.findViewById(R.id.btn_9);
-        btn_tp = view.findViewById(R.id.btn_tp);
-        btn_am= view.findViewById(R.id.btn_am);
-        btn_cong = view.findViewById(R.id.btn_cong);
-        btn_tru = view.findViewById(R.id.btn_tru);
-        btn_nhan = view.findViewById(R.id.btn_nhan);
-        btn_chia = view.findViewById(R.id.btn_chia);
-        btn_pt = view.findViewById(R.id.btn_pt);
-        btn_ac = view.findViewById(R.id.btn_ac);
-        btn_del = view.findViewById(R.id.btn_del);
-        btn_bang = view.findViewById(R.id.btn_bang);
+        btn0 = view.findViewById(R.id.btn_0);
+        btn1 = view.findViewById(R.id.btn_1);
+        btn2 = view.findViewById(R.id.btn_2);
+        btn3 = view.findViewById(R.id.btn_3);
+        btn4 = view.findViewById(R.id.btn_4);
+        btn5 = view.findViewById(R.id.btn_5);
+        btn6 = view.findViewById(R.id.btn_6);
+        btn7 = view.findViewById(R.id.btn_7);
+        btn8 = view.findViewById(R.id.btn_8);
+        btn9 = view.findViewById(R.id.btn_9);
+        btntp = view.findViewById(R.id.btn_tp);
+        btnam= view.findViewById(R.id.btn_am);
+        btncong = view.findViewById(R.id.btn_cong);
+        btntru = view.findViewById(R.id.btn_tru);
+        btnnhan = view.findViewById(R.id.btn_nhan);
+        btnchia = view.findViewById(R.id.btn_chia);
+        btnpt = view.findViewById(R.id.btn_pt);
+        btnac = view.findViewById(R.id.btn_ac);
+        btndel = view.findViewById(R.id.btn_del);
+        btnbang = view.findViewById(R.id.btn_bang);
         setButton();
         return view;
     }
@@ -84,35 +84,6 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.menu,menu);
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        text = getActivity().findViewById(R.id.text);
-        kq = getActivity().findViewById(R.id.kq);
-        btn_0 = getActivity().findViewById(R.id.btn_0);
-        btn_1 = getActivity().findViewById(R.id.btn_1);
-        btn_2 = getActivity().findViewById(R.id.btn_2);
-        btn_3 = getActivity().findViewById(R.id.btn_3);
-        btn_4 = getActivity().findViewById(R.id.btn_4);
-        btn_5 = getActivity().findViewById(R.id.btn_5);
-        btn_6 = getActivity().findViewById(R.id.btn_6);
-        btn_7 = getActivity().findViewById(R.id.btn_7);
-        btn_8 = getActivity().findViewById(R.id.btn_8);
-        btn_9 = getActivity().findViewById(R.id.btn_9);
-        btn_tp = getActivity().findViewById(R.id.btn_tp);
-        btn_am= getActivity().findViewById(R.id.btn_am);
-        btn_cong = getActivity().findViewById(R.id.btn_cong);
-        btn_tru = getActivity().findViewById(R.id.btn_tru);
-        btn_nhan = getActivity().findViewById(R.id.btn_nhan);
-        btn_chia = getActivity().findViewById(R.id.btn_chia);
-        btn_pt = getActivity().findViewById(R.id.btn_pt);
-        btn_ac = getActivity().findViewById(R.id.btn_ac);
-        btn_del = getActivity().findViewById(R.id.btn_del);
-        btn_bang = getActivity().findViewById(R.id.btn_bang);
-        setButton();
     }
 
     @Override
@@ -127,26 +98,26 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
     }
 
     private void setButton() {
-        btn_0.setOnClickListener(this);
-        btn_1.setOnClickListener(this);
-        btn_2.setOnClickListener(this);
-        btn_3.setOnClickListener(this);
-        btn_4.setOnClickListener(this);
-        btn_5.setOnClickListener(this);
-        btn_6.setOnClickListener(this);
-        btn_7.setOnClickListener(this);
-        btn_8.setOnClickListener(this);
-        btn_9.setOnClickListener(this);
-        btn_tp.setOnClickListener(this);
-        btn_am.setOnClickListener(this);
-        btn_pt.setOnClickListener(this);
-        btn_cong.setOnClickListener(this);
-        btn_tru.setOnClickListener(this);
-        btn_nhan.setOnClickListener(this);
-        btn_chia.setOnClickListener(this);
-        btn_ac.setOnClickListener(this);
-        btn_del.setOnClickListener(this);
-        btn_bang.setOnClickListener(this);
+        btn0.setOnClickListener(this);
+        btn1.setOnClickListener(this);
+        btn2.setOnClickListener(this);
+        btn3.setOnClickListener(this);
+        btn4.setOnClickListener(this);
+        btn5.setOnClickListener(this);
+        btn6.setOnClickListener(this);
+        btn7.setOnClickListener(this);
+        btn8.setOnClickListener(this);
+        btn9.setOnClickListener(this);
+        btntp.setOnClickListener(this);
+        btnam.setOnClickListener(this);
+        btnpt.setOnClickListener(this);
+        btncong.setOnClickListener(this);
+        btntru.setOnClickListener(this);
+        btnnhan.setOnClickListener(this);
+        btnchia.setOnClickListener(this);
+        btnac.setOnClickListener(this);
+        btndel.setOnClickListener(this);
+        btnbang.setOnClickListener(this);
     }
     public String delete(String num){
         int lenght = num.length();

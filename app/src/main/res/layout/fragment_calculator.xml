@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalculatorFragment"
-    android:background="#cccccc"
+    android:background="@color/colorXam"
     android:orientation="vertical">
     <TextView
         android:background="@color/colortrang"
@@ -14,29 +14,29 @@
         android:layout_weight="1"
         android:gravity="center_horizontal"
         android:text="Calculator"
-        android:textSize="40dp"
-        android:textColor="#000000"/>
+        android:textSize="@dimen/size_text"
+        android:textColor="@color/colorDark"/>
     <TextView
-        android:background="#000000"
+        android:background="@color/colorDark"
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="0"
-        android:textSize="50dp"
-        android:textColor="#fffefe"/>
+        android:textSize="@dimen/size_text"
+        android:textColor="@color/colortrang"/>
     <TextView
         android:id="@+id/kq"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:text="0"
-        android:textColor="#000000"
-        android:textSize="100dp"
+        android:textColor="@color/colorDark"
+        android:textSize="@dimen/size_num"
         android:textAlignment="textEnd"/>
     <TableLayout
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingTop="@dimen/layout_padding"
+        android:paddingBottom="@dimen/layout_padding"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5">
@@ -48,37 +48,37 @@
                 android:background="@color/colortrang"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:text="AC" />
+                android:text="@string/AC" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:id="@+id/btn_del"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colortrang"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:text="Del" />
+                android:text="@string/del" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:id="@+id/btn_pt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/colortrang"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:text="%" />
+                android:text="@string/phan_tram" />
 
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:id="@+id/btn_chia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/colorcam"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:text="/" />
+                android:text="@string/chia" />
         </TableRow>
-        <TableRow android:layout_marginTop="3dp">
+        <TableRow android:layout_marginTop="@dimen/margin_lelf">
             <Button
                 android:gravity="center"
                 android:layout_weight="1"
@@ -86,36 +86,36 @@
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7" />
+                android:text="@string/bay" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_8"
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8" />
+                android:text="@string/tam" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_9"
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9" />
+                android:text="@string/chin" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_nhan"
                 android:background="@color/colorcam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="X" />
+                android:text="@string/nhan" />
         </TableRow>
-        <TableRow android:layout_marginTop="3dp">
+        <TableRow android:layout_marginTop="@dimen/margin_lelf">
             <Button
                 android:gravity="center"
                 android:layout_weight="1"
@@ -123,36 +123,36 @@
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4" />
+                android:text="@string/tu" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_5"
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5" />
+                android:text="@string/nam" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_6"
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6" />
+                android:text="@string/sau" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_tru"
                 android:background="@color/colorcam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/tru" />
         </TableRow>
-        <TableRow android:layout_marginTop="3dp">
+        <TableRow android:layout_marginTop="@dimen/margin_lelf">
             <Button
                 android:gravity="center"
                 android:layout_weight="1"
@@ -160,36 +160,36 @@
                 android:background="@color/colortrang"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="1" />
+                android:text="@string/mot" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_2"
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2" />
+                android:text="@string/hai" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_3"
                 android:background="@color/colortrang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3" />
+                android:text="@string/ba" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_cong"
                 android:background="@color/colorcam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/cong" />
         </TableRow>
-        <TableRow android:layout_marginTop="3dp">
+        <TableRow android:layout_marginTop="@dimen/margin_lelf">
             <Button
                 android:gravity="center"
                 android:layout_weight="1"
@@ -197,34 +197,34 @@
                 android:background="@color/colortrang"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="0" />
+                android:text="@string/khong" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_am"
                 android:background="@color/colortrang"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="+/-" />
+                android:text="@string/am" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_tp"
                 android:background="@color/colortrang"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="." />
+                android:text="@string/thap_phan" />
             <Button
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="@dimen/margin_lelf"
                 android:gravity="center"
                 android:layout_weight="1"
                 android:id="@+id/btn_bang"
                 android:background="@color/colorcam"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="=" />
+                android:text="@string/bang" />
         </TableRow>
     </TableLayout>
 </LinearLayout>
